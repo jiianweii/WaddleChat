@@ -26,7 +26,7 @@ export default function Message({
       )}
       {type === "message" &&
         (myUsername !== username ? (
-          <div className="flex items-start gap-2">
+          <div className="flex items-start gap-2 mt-[20px]">
             <div className="p-0.5 border-1 rounded-full">
               <Icon icon="mdi:user" fontSize={35} />
             </div>
