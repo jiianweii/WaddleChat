@@ -36,7 +36,7 @@ export default function ChatForm() {
   }, [messages]);
 
   useEffect(() => {
-    const socket = new WebSocket("ws://localhost:3001");
+    const socket = new WebSocket("wss://apiwaddlechat-dzqzhxxc.b4a.run");
     socketRef.current = socket;
     // Connection opened
     socket.addEventListener("open", () => {
