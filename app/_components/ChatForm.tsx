@@ -84,14 +84,16 @@ export default function ChatForm() {
   };
 
   return (
-    <div className="h-[80%] w-[600px] bg-white rounded-[12px] shadow-2xl">
+    <div className="lg:h-[80%] lg:w-[600px] h-full w-full bg-white rounded-[12px] shadow-2xl">
       <div className="flex h-[10%] border-b-1 border-[#00000050] items-center justify-between px-2.5">
         <Button handleClick={() => redirect("/", RedirectType.replace)}>
           <Icon icon="formkit:arrowleft" />
         </Button>
         <div className="flex flex-col text-center">
-          <Text className="text-[1.7rem] font-bold">Room 1</Text>
-          <Text className="text-[0.7rem] font-semibold">
+          <Text className="min-[425px]:text-[1.7rem] text-[1.2rem] font-bold">
+            Room 1
+          </Text>
+          <Text className="min-[425px]:text-[0.7rem] text-[0.5rem] font-semibold">
             Participants: {userCount}
           </Text>
         </div>
@@ -130,10 +132,14 @@ export default function ChatForm() {
           />
         </div>
         <Button
-          className="bg-[var(--PURPLE)] px-4 py-3 h-full"
+          className="bg-[var(--PURPLE)] min-[425px]:px-4 min-[425px]:py-3 px-3 py-2 h-full"
           handleClick={sendMessage}
         >
-          <Icon icon="material-symbols:send" fontSize={30} color="#fff" />
+          <Icon
+            icon="material-symbols:send"
+            className="min-[425px]:text-[2rem] text-[1.4rem]"
+            color="#fff"
+          />
         </Button>
       </div>
     </div>
