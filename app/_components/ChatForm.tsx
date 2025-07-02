@@ -84,7 +84,7 @@ export default function ChatForm() {
   };
 
   return (
-    <div className="lg:h-[80%] lg:w-[600px] h-full w-full bg-white rounded-[12px] shadow-2xl">
+    <div className="lg:h-[80%] lg:w-[600px] h-full w-full bg-white sm:rounded-[12px] shadow-2xl">
       <div className="flex h-[10%] border-b-1 border-[#00000050] items-center justify-between px-2.5">
         <Button handleClick={() => redirect("/", RedirectType.replace)}>
           <Icon icon="formkit:arrowleft" />
